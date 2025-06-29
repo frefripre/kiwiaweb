@@ -95,7 +95,16 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000000; }
+  background-color:#000000;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;a}
+#particles-js{
+  height: 100vh;
+  width: 100%;
+  position:  all;
+  z-index: -1;
+}
 
 h1 {
   font-size: 2.369em;
@@ -215,6 +224,42 @@ h6 {
   -moz-transform: translate(-50%);
   -o-transform: translate(-50%);
   transform: translate(-50%); }
+
+
+.custom-audio {
+  /* Cambia el color del fondo del reproductor */
+  background-color: gold;
+  /* Asegúrate de que el reproductor tenga una posición relativa */
+  position: relative;
+  /* Define la animación */
+  animation: shine 2s linear infinite;
+}
+
+.custom-audio::-webkit-media-controls-panel {
+  /* Cambia el color de los controles en navegadores WebKit */
+  background-color: gold;
+}
+
+.custom-audio::-webkit-media-controls-play-button {
+  /* Cambia el color del botón de reproducción en navegadores WebKit */
+  color: gold;
+}
+
+@keyframes shine {
+  0% {
+    /* Define el brillo inicial */
+    box-shadow: 0 0 10px 5px gold;
+  }
+  50% {
+    /* Define el brillo máximo */
+    box-shadow: 0 0 20px 10px gold;
+  }
+  100% {
+    /* Vuelve al brillo inicial */
+    box-shadow: 0 0 10px 5px gold;
+  }
+}
+
 
 /* ------------------------------------- */
 /* Quote  ................... */
@@ -565,7 +610,7 @@ h6 {
     position: absolute;
     width: calc(100% - 15px);
     
-    color: #e2ff00;
+    color: #ffffff;
     overflow: hidden;
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -957,10 +1002,10 @@ background-size: 1092px 736px;
 #contact {
   width: 100%;
   padding: 10% calc(8% + 5px);
-  background: #f5f5f5;
-  color: #000; }
+  background: #000;
+  color: #fff; }
   #contact h2 {
-    font-weight: 400; }
+    font-weight: 40; }
   #contact p {
     color: #fff; }
 
@@ -1278,8 +1323,8 @@ a {
   background: #fff !important; }
 
 ::selection {
-  color: #38C10E;
-  background: #fff !important; }
+  color: #fff;
+  background: #000 !important; }
 
 img {
   max-width: 100%;
@@ -1312,7 +1357,7 @@ img {
 /* photoSwipe */
 .pswp__ui--fit .pswp__top-bar,
 .pswp__ui--fit .pswp__caption {
-  background: #055d9e; }
+  background: #000000; }
 
 .pswp__item {
   cursor: url("../img/icon-zoom-out.png"), pointer; }
@@ -1327,6 +1372,30 @@ img {
   height: 30px;
   width: 32px;
   position: absolute; }
+
+  .pswp__symbol {
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 33px;
+}
+@media (max-width: 767px) {
+    display: block;
+    color: #ffffff; /* Color blanco */
+    font-size: 16px; /* Tamaño de fuente personalizado */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+  }
+.pswp__counter {
+    margin-left: 10px; /* Ajusta el margen según sea necesario */
+
+}
+.pswp__scroll-wrap {
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/736/973/desktop-wallpaper-starry-night-sky-backgrounds-loop-worship-loops-night-background.jpg ');
+    background-repeat: repeat;
+}
 
 /* ------------------------------------- */
 /* 8. Media Queries .................... */

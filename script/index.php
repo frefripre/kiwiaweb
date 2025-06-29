@@ -96,7 +96,7 @@ $max = count($datarray); // Sets the ammount of comments
 	 <div class='container'>
 	 <div class='panel-group'>
    <div class='panel panel-primary'>
-      <div class='panel-heading'>By <b>" .$datarray[$row][1]. "</b> | on <b>" .$datarray[$row][0]. "</b></div>
+      <div class='panel-heading'>Por <b>" .$datarray[$row][1]. "</b> | el <b>" .$datarray[$row][0]. "</b></div>
       <div class='panel-body'>" .$datarray[$row][2]. "</div>
     </div>
 	</div>
